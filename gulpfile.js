@@ -1,3 +1,4 @@
+const gulp = require("gulp");
 const replace = require('gulp-replace');
 const { src, dest } = require('gulp');
 
@@ -675,4 +676,5 @@ function migrate() {
   );
 }
 
-exports.migrate = migrate;
+//exports.migrate = migrate;
+gulp.task('migrate', migrate)
